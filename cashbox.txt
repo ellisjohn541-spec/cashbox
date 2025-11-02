@@ -1,0 +1,94 @@
+Cashbox - Personal finance tracker
+
+Version 1.0
+
+Created by John Ellis
+
+========
+OVERVIEW
+========
+
+Cashbox is a simple yet powerful Python based finance management tool, designed to help users track monthly direct debit payment, savings and investments.
+
+It provides features for managing multiple savings accounts, and multiple investment portfolios, calculating growth projections for a 10 year period and logging contributions. All data is stored locally in SQLite databases.
+
+========
+FEATURES
+========
+
+* Monthly Direct Debit Tracking - add your direct debits for the month - view them in a list - as direct debits go out add them and compare at the end of the month, this helps me see any unexpected bills that might have gone up or down.
+
+* Savings Tracker - Add and manage multiple savings accounts with balances and interest rates
+
+* Investment Tracker - Monitor investment portfolios and project growth under various market conditions
+
+* Automatic Projection - Generate 1-10 year estimated growth for both savings and investments
+
+* Contribution Logging - Record and view past deposits and investment additions
+
+* Local Database Storage - All data is stored securely using SQLite (no external dependencies
+
+===========
+INSTALLATION
+===========
+
+* Ensure you have Python 3.10+ installed
+* Create a new folder for cashbox and save the .py file inside, this will hold the SQLite databases as well
+
+* (Optional) Create a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate # Linux / macOS
+venv\Scripts\activate # Windows
+
+Install dependencies:
+
+pip install -r requirements.txt
+SQLite is built into python so no external database setup is required.
+
+==========
+HOW TO USE
+==========
+
+Run the main program from terminal:
+
+python3 cashbox.py
+
+Follow the on screen menu options to:
+
+* Check and track monthly direct debits
+* Add new savings or investment accounts
+* View balances and projections
+* Record monthly contributions
+* Exit safely - all data is automatically stored
+
+=========
+DATABASES
+=========
+
+Each database is created automatically the first time you run cashbox.
+
+============
+FUTURE PLANS
+============
+
+* GUI version (Tkinter based)
+* Graphical analytics dashboard
+* Export reports to csv / MS Excel or Libre Office Calc
+* Multi currency support
+
+========================
+NOTES FROM THE DEVELOPER
+========================
+
+Cashbox started out as a program I developed to demonstrate the skills I had learned after working through the books Python: a crash course and Python: automating the boring stuff as I found the practice programs in the books not very interesting or relevant, I wanted to build programs I can use everyday.
+
+I wanted to create a program that took all the spreadsheets I used on a daily basis for tracking my finances and have everything in one single program.
+
+I am happy with it for now but I know there is so much potential for this program. Even to add modules to keep a track on debts.
+
+I am currently working through a new book learning Tkinter and GUI development, which I will use to develop the new version of cashbox and other programs I have developed or still working on.
+
+Thank you for using cashbox, I hope you find it useful.
+
+John
